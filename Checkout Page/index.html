@@ -10,5 +10,130 @@
 </head>
 <body>
 
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <main>
+    <form method="post">
+      <section class="contact">
+        <h3>Contact information</h2>
+        <p>
+          <label for="email">
+            <span>E-mail</span>
+          </label><br>
+          <svg class="icon icon-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve"><g><g><path d="M460.8,68.267H17.067l221.867,182.75L463.309,68.779C462.488,68.539,461.649,68.368,460.8,68.267z"/></g></g><g><g><path d="M249.702,286.31c-6.288,5.149-15.335,5.149-21.623,0L0,98.406v294.127c0,9.426,7.641,17.067,17.067,17.067H460.8    c9.426,0,17.067-7.641,17.067-17.067V100.932L249.702,286.31z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <input type="text" id="email" name="email" placeholder="Enter your email...">
+        </p>
+        <p>
+          <label for="phone">
+            <span>Phone</span>
+          </label><br>
+          <svg class="icon icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve"><g><g><path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <input type="text" id="phone" name="phone" placeholder="Enter your phone...">
+        </p>
+      </section>
+      <section class="adress">
+        <h3>Shipping address</h2>
+          <p>
+            <label for="name">
+              <span>Full name</span>
+            </label><br>
+            <svg class="icon icon-name" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="45.532px" height="45.532px" viewBox="0 0 45.532 45.532" style="enable-background:new 0 0 45.532 45.532;" xml:space="preserve"><g><path d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765   S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53   c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012   c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592   c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            <input type="text" id="name" name="name" placeholder="Enter your name...">
+          </p>
+          <p>
+            <label for="address">
+              <span>Address</span>
+            </label><br>
+            <svg class="icon icon-address" xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 0 512 512" width="512pt"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg>
+            <input type="text" id="address" name="address" placeholder="Your address...">
+          </p>
+          <p>
+            <label for="city">
+              <span>City</span>
+            </label><br>
+            <svg class="icon icon-city" xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"><g><path d="m473.901 482v-160.028h-172.357v160.028h-30v-190.028h101.179v-171.094h-33.726v-67.031h-38.163v-53.847h-30v53.847h-38.164v67.031h-33.726v361.122h-30v-294.09h-130.845v294.09h-38.099v30h512v-30zm-169.552-324.09h30v30h-30zm0 67.031h30v30h-30zm-186.49 245.294h-30v-30h30zm0-71.765h-30v-30h30zm0-71.764h-30v-30h30zm0-71.765h-30v-30h30zm149.459 0h-30v-30h30zm0-67.031h-30v-30h30zm3.515-97.032h30v30h-30zm98.164 391.122h-30v-120.4h30zm67.452 0h-30v-120.4h30z"/></g></svg>
+            <input type="text" id="city" name="city" placeholder="Your city...">
+          </p>
+          <div class="two-in-row">
+            <p>
+              <label for="country">
+                <span>Country</span>
+              </label><br>
+              <svg class="icon icon-country" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="31.416px" height="31.416px" viewBox="0 0 31.416 31.416" style="enable-background:new 0 0 31.416 31.416;" xml:space="preserve"><g><g><path d="M28.755,6.968l-0.47,0.149L25.782,7.34l-0.707,1.129l-0.513-0.163L22.57,6.51l-0.289-0.934L21.894,4.58l-1.252-1.123    l-1.477-0.289l-0.034,0.676l1.447,1.412l0.708,0.834L20.49,6.506l-0.648-0.191L18.871,5.91l0.033-0.783l-1.274-0.524l-0.423,1.841    l-1.284,0.291l0.127,1.027l1.673,0.322l0.289-1.641l1.381,0.204l0.642,0.376h1.03l0.705,1.412l1.869,1.896l-0.137,0.737    l-1.507-0.192l-2.604,1.315l-1.875,2.249l-0.244,0.996h-0.673l-1.254-0.578l-1.218,0.578l0.303,1.285l0.53-0.611l0.932-0.029    l-0.065,1.154l0.772,0.226l0.771,0.866l1.259-0.354l1.438,0.227l1.67,0.449l0.834,0.098l1.414,1.605l2.729,1.605l-1.765,3.372    l-1.863,0.866l-0.707,1.927l-2.696,1.8l-0.287,1.038c6.892-1.66,12.019-7.851,12.019-15.253    C31.413,12.474,30.433,9.465,28.755,6.968z"/><path d="M17.515,23.917l-1.144-2.121l1.05-2.188l-1.05-0.314l-1.179-1.184l-2.612-0.586l-0.867-1.814v1.077h-0.382l-2.251-3.052    v-2.507L7.43,8.545L4.81,9.012H3.045L2.157,8.43L3.29,7.532L2.16,7.793c-1.362,2.326-2.156,5.025-2.156,7.916    c0,8.673,7.031,15.707,15.705,15.707c0.668,0,1.323-0.059,1.971-0.137l-0.164-1.903c0,0,0.721-2.826,0.721-2.922    C18.236,26.357,17.515,23.917,17.515,23.917z"/><path d="M5.84,5.065l2.79-0.389l1.286-0.705l1.447,0.417l2.312-0.128l0.792-1.245l1.155,0.19l2.805-0.263L19.2,2.09l1.09-0.728    l1.542,0.232l0.562-0.085C20.363,0.553,18.103,0,15.708,0C10.833,0,6.474,2.222,3.596,5.711h0.008L5.84,5.065z M16.372,1.562    l1.604-0.883l1.03,0.595l-1.491,1.135l-1.424,0.143l-0.641-0.416L16.372,1.562z M11.621,1.691l0.708,0.295l0.927-0.295    l0.505,0.875l-2.14,0.562l-1.029-0.602C10.591,2.526,11.598,1.878,11.621,1.691z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+              <input list="countries" id="country" name="country" placeholder="Your country...">
+              <datalist id="countries">
+                <option value="USA">
+                <option value="Canada">
+                <option value="Europa">
+              </datalist>
+            </p>
+            <p>
+              <label for="postal">
+                <span>Postal code</span>
+              </label><br>
+              <svg class="icon icon-mail-box" xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"><g><path d="m255 431v-179c0-50.609-41.89-107-102-107h-5c-59 0-107 48-107 107v164c0 8.284 6.716 15 15 15z"/><path d="m364 145h-15v71c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-11.983 0-88.61 0-105h97c11.646 0 18.852-12.734 12.862-22.717l-19.426-32.377 19.509-33.328c5.842-9.98-1.366-22.578-12.945-22.578h-112c-8.284 0-15 6.716-15 15v130h-54.912c32.288 27.054 50.912 67.545 50.912 107v179h171c8.284 0 15-6.716 15-15v-164c0-59-48-107-107-107z"/><path d="m225 461v36c0 8.284 6.716 15 15 15h64c8.284 0 15-6.716 15-15v-36z"/></g></svg>
+              <input type="text" id="postal" name="postal" placeholder="Your postal code...">
+            </p>
+          </div>
+      </section>
+      <input type="checkbox" id="save-information" name="save-information">
+      <label class="save" for="save-information">Save this information for next time</label><br>
+      <a href="#" class="btn" type="submit">Continue</a>
+    </form>
+
+    <article class="order">
+      <div class="items">
+        <section class="item item-1">
+          <picture>
+            <source srcset="./assets/img/photo1.webp" type="image/webp">
+            <source srcset="./assets/img/photo1.png" type="image/png">
+            <img src="./assets/img/photo1.png" alt="First product">
+          </picture>
+          <div class="content">
+            <h4>Vintage Backbag</h4>
+            <p>$54.99 &nbsp;&nbsp;&nbsp;<span>$94.99</span></p>
+            <div class="summation">
+              <svg class="icon icon-minus" xmlns="http://www.w3.org/2000/svg" height="469pt" viewBox="0 -192 469.33333 469" width="469pt"><path d="m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"/></svg>
+              <p class="number">1</p>
+              <svg class="icon icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g><g><path d="M465.064,207.566l0.028,0H284.436V27.25c0-14.84-12.016-27.248-26.856-27.248h-23.116    c-14.836,0-26.904,12.408-26.904,27.248v180.316H26.908c-14.832,0-26.908,12-26.908,26.844v23.248    c0,14.832,12.072,26.78,26.908,26.78h180.656v180.968c0,14.832,12.064,26.592,26.904,26.592h23.116    c14.84,0,26.856-11.764,26.856-26.592V284.438h180.624c14.84,0,26.936-11.952,26.936-26.78V234.41    C492,219.566,479.904,207.566,465.064,207.566z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </div>
+          </div>
+        </section>
+        <section class="item item-2">
+          <picture>
+            <source srcset="./assets/img/photo2.webp" type="image/webp">
+            <source srcset="./assets/img/photo2.png" type="image/png">
+            <img src="./assets/img/photo2.png" alt="First product">
+          </picture>
+          <div class="content">
+            <h4>Levi Shoes</h4>
+            <p>$74.99 &nbsp;&nbsp;&nbsp;<span>$124.99</span></p>
+            <div class="summation">
+              <svg class="icon icon-minus" xmlns="http://www.w3.org/2000/svg" height="469pt" viewBox="0 -192 469.33333 469" width="469pt"><path d="m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"/></svg>
+              <p class="number">1</p>
+              <svg class="icon icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g><g><path d="M465.064,207.566l0.028,0H284.436V27.25c0-14.84-12.016-27.248-26.856-27.248h-23.116    c-14.836,0-26.904,12.408-26.904,27.248v180.316H26.908c-14.832,0-26.908,12-26.908,26.844v23.248    c0,14.832,12.072,26.78,26.908,26.78h180.656v180.968c0,14.832,12.064,26.592,26.904,26.592h23.116    c14.84,0,26.856-11.764,26.856-26.592V284.438h180.624c14.84,0,26.936-11.952,26.936-26.78V234.41    C492,219.566,479.904,207.566,465.064,207.566z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="prices">
+        <div class="shipping">
+          <p>Shipping</p>
+          <p>$19</p>
+        </div>
+        <div class="total">
+          <p>Total</p>
+          <p>$148.98</p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <h5>Dejan Samardzija @ <a href="https://devchallenges.io/">DevChallenges.io</a></h5>
+  </footer>
+
 </body>
 </html>

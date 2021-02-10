@@ -1,9 +1,282 @@
+/* -----------
+Content:
+1. General
+2. Header
+3. Main
+4. Footer
+5. Media Queries
+-----------*/
+
+/*----------
+1. General
+----------*/
 @import url('./fonts.css');
+
+:root {
+  --grey: #4E5150;
+  --grey-one: #333;
+  --grey-two: #4f4f4f;
+  --grey-three: #828282;
+  --gray-four: #F2F2F2;
+  --grey-five: #E0E0E0;
+  --grey-six: #BDBDBD;
+  --orange: #F2994A;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
+body {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 0.9375rem + 2.5000vw, 2.25rem);
+  color: var(--grey);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: clamp(0.875rem, 0.5000rem + 1.6667vw, 1.375rem);
+  color: var(--grey-one);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/*----------
+2. Form
+----------*/
+p {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+p label {
+  font-size: 12px;
+  color: var(--grey-two);
+}
+
+p input {
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  border-radius: 10px;
+  color: var(--grey-three);
+  font-size: clamp(0.75rem, 0.5625rem + 0.8333vw, 1rem);
+  border: 1px solid var(--grey-three);
+  width: 100%;
+}
+
+/* Icons */
+.icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 1.75rem;
+  left: 0.75rem;
+}
+
+.icon path {
+  fill: var(--grey-three);
+}
+
+.save {
+  font-size: clamp(0.75rem, 0.5625rem + 0.8333vw, 1rem);
+  color: var(--grey-two);
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: var(--orange);
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 160px;
+  float: right;
+}
+
+/* Section Contact */
+.contact {
+  margin-bottom: 2rem;
+}
+
+/* Section adress */
+.address {
+  margin-bottom: 2rem;
+}
+
+.two-in-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.two-in-row p {
+  width: 50%;
+}
+
+/*----------
+3. Order
+----------*/
+.order {
+  padding: 1rem 2rem;
+  background: var(--gray-four);
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  gap: 2rem;
+}
+
+.item img {
+  width: 160px;
+  height: 130px;
+  border-radius: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content p {
+  font-size: clamp(0.75rem, 0.5625rem + 0.8333vw, 1rem);
+  color: var(--orange);
+}
+
+.content span {
+  font-size: 12px;
+  color: var(--grey);
+  text-decoration: line-through;
+}
+
+.summation {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  border: solid 1px var(--grey-three);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.summation p {
+  margin: 0;
+}
+
+.summation .icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: var(--grey-five);
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.summation .icon path {
+  fill: #000;
+}
+
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-six);
+  padding-top: 1rem;
+}
+
+/*---------------
+4. Footer
+---------------*/
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 1rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*---------------
+5. Media Queries
+---------------*/
+@media only screen and (max-width: 1000px) {
+  .two-in-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .two-in-row p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  main {
+    flex-direction: column;
+  }
+
+  form {
+    order: 2;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summation {
+    width: 150px;
+  }
+
+  .order {
+    height: 750px;
+  }
+
+  .content {
+    text-align: center;
+  }
+}
